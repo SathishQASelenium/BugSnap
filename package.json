@@ -1,0 +1,14 @@
+{
+  "name": "bug-report-enhancer",
+  "version": "1.0.0",
+  "description": "Drop a screenshot, analyze it with AI, and create a Jira bug ticket automatically",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
